@@ -4,14 +4,13 @@ const mailClasse = ['pinco.pallino@gmail.com', 'giada.pallino@gmail.com', 'marti
 const mailUtente = prompt('Inserisci la tua mail:');
 console.log('La mail inserita è: ', mailUtente);
 
-for (let index = 0; index < mailClasse.length; index++) {
-    console.log(index);
-    const utenteClasse = mailClasse[index];
+for (let index = 0; index < mailClasse.length; index++) {   
 
-    if (mailUtente == utenteClasse){
+    if (mailUtente == mailClasse[index]){
     console.log(mailUtente, "fai parte di questa classe, procedi con il login");
+        index = mailClasse.length++;
     }
-    else if (mailUtente != utenteClasse) {
-        console.log(mailUtente, 'Ci spiace! Non fai parte di questa classe!')
+    else if (index == mailClasse.length-1){
+        console.log(mailUtente, "non fai parte di questa classe");
     }
 }

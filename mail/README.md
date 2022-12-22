@@ -7,3 +7,11 @@
     - L'UTENTE PUò ACCEDERE.
 4- SE LA MAIL INSERITA NEL PROMPT NON CORRISPONDE A UN VALORE DELL'ARRAY:
     - L'UTENTE NON PUò ACCEDERE.
+
+    const numbers = [2, 7, 9, 18, 47, 22, 23, 25, 100];
+
+for (let indice = 0; indice < numbers.length; indice++) {
+    if (numbers[indice] % 2 == 1) {
+        console.log(numbers[indice], 'è dispari');
+    }
+}
